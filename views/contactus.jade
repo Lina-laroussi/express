@@ -1,0 +1,32 @@
+extends layout 
+
+
+block content 
+ nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  .container-fluid
+    
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.active(aria-current='page' href='/') Home
+        li.nav-item
+          a.nav-link(href='/services') Our services
+        li.nav-item
+          a.nav-link(href='#') contact us 
+ div.formulaire
+    h1.titre Contact us
+    form.col-md-6
+        .form-floating.mb-3
+            input#floatingInput.form-control(type='text' placeholder='Name')
+            label(for='floatingInput') Name
+        .form-floating.mb-3
+            input#floatingInput.form-control(type='text' placeholder='Last Name')
+            label(for='floatingInput') Last Name
+        .form-floating.mb-3
+            input#floatingInput.form-control(type='email' placeholder='name@example.com')
+            label(for='floatingInput') Email address
+        .form-floating
+            input#floatingPassword.form-control(type='password' placeholder='Password')
+            label(for='floatingPassword') Password
